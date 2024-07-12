@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import Hero from './Hero';
+import BodyImg from './Body';
+import Footer from './footer';
 
 function App() {
+  //set variable to pass props
+ let title = "Watch List";
+
+ //call components
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    
+    <div className='main'>
+    <Header></Header>
+    <Hero ></Hero>
     </div>
+
+    <div>
+      <BodyImg title={title}></BodyImg>
+      <Footer></Footer>
+    </div>
+    </>
+
   );
 }
 

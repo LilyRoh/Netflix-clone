@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    background-color: #141414;
+}
+
+.header-div{
+    display: flex;
+    width: 100%;
+    
+}
+
+.logo{
+ margin: 10px;
+ 
+}
+ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+}
+li{
+    color: white;
+    margin-left: 18px;
+    list-style-type:none;    
+}
